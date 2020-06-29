@@ -28,7 +28,7 @@ const SecondPage = props => {
           </span>{" "}
           aka Master Blaster{" "}
         </h1>
-        <div className="mb-10 mt-12 w-5/6 text-left font-sans font-medium text-gray-600 md:w-2/3 lg:w-1/2 lg:mt-12 sm:w-5/6 sm:mt-10">
+        <div className="mb-10 mt-12 w-5/6 text-left font-sans font-light text-lg text-gray-600 md:w-2/3 lg:w-1/2 lg:mt-12 sm:w-5/6 sm:mt-10">
           <p className="">
             Sachin Tendulkar is a former Indian cricketer and captain and is one
             of the{" "}
@@ -53,12 +53,12 @@ const SecondPage = props => {
             </svg>
           </div>
           <p>
-            <Link
-              to="https://en.wikipedia.org/wiki/Sachin_Tendulkar"
+            <a
+              href="https://en.wikipedia.org/wiki/Sachin_Tendulkar"
               className="text-blue-600"
             >
               Sachin Tendulkar
-            </Link>{" "}
+            </a>{" "}
             is widely acknowledged as one of the greatest batsmen of all time.
             The{" "}
             <span className="bg-blue-200 text-blue-600 p-1 rounded">
@@ -96,7 +96,7 @@ const SecondPage = props => {
           </p>
           <Link to="/all">
             {" "}
-            <button className=" mt-6 bg-blue-200 text-lg capitalize font-semibold text-blue-700 p-3 text-uppercase rounded w-full transition duration-500 ease-in-out hover:bg-bue-200 transform hover:-translate-y-1 hover:scale-102 focus:outline-none">
+            <button className=" mt-6 bg-blue-200 text-lg capitalize font-medium text-blue-700 p-3 text-uppercase rounded w-full transition duration-500 ease-in-out hover:bg-bue-200 transform hover:-translate-y-1 hover:scale-102 focus:outline-none">
               Let's explore
             </button>
           </Link>
