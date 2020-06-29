@@ -8,7 +8,6 @@ function AllCards(props) {
   let { allSachinJson } = props.data
   const sachinData = allSachinJson.edges.map(e => e.node)
   const [search, setSearch] = useState("")
-  // console.log(props.location.state.country)
   let country = ""
   console.log(props)
   if (props.location.state !== null) {
@@ -19,13 +18,13 @@ function AllCards(props) {
   // let country = props.location.state.country ? props.location.state.country : ""
 
   useEffect(() => {
-    console.log(country)
-    setSearch(country)
+    if (country.length !== 0) {
+      setSearch(country)
+    }
   }, [country])
 
   // Filter out matches using country
   let showingMatches
-
   if (search) {
     const match = new RegExp(escapeRegExp(search), "i")
     showingMatches = sachinData.filter(searchItem =>
