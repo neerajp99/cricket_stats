@@ -7,9 +7,10 @@ function InputField( props ) {
       <input
         placeholder={props.placeholder}
         name={props.name}
-        className="w-full container mt-2  border-b border-gray-600 p-3 font-sans font-medium tracking-wide text-gray-700 focus:outline-none focus:border-blue-500"
+        className="relative z-10 w-full container mt-2  border-b border-gray-600 p-3 font-sans font-normal tracking-wide text-gray-700 focus:outline-none focus:border-blue-500"
         value={props.value}
         onChange={props.onChange}
+        onClick={props.onClick}
       />
     </div>
   )
