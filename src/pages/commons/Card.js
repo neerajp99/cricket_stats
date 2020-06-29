@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 
 function Card(props) {
   let heading = props.data.opposition.slice(2)

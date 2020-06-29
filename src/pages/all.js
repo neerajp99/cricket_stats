@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import Card from "./commons/Card"
-import { useStaticQuery, graphql } from "gatsby"
+import {graphql } from "gatsby"
 import escapeRegExp from "escape-string-regexp"
 
 function AllCards(props) {

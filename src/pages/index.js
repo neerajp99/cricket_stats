@@ -8,7 +8,7 @@ import InputField from "./commons/InputField"
 
 const IndexPage = props => {
   const [inputValue, setInputValue] = useState("")
-  const [current, setCurrent] = useState([])
+  // const [current, setCurrent] = useState([])
   const [toggleState, setToggleState] = useState(false)
 
   let countries = [
@@ -83,6 +83,7 @@ const IndexPage = props => {
                 <button
                   className="fixed top-0 right-0 bottom-0 left-0 h-full w-full bg-transparent"
                   onClick={() => setToggleState(false)}
+                  aria-label="Close"
                 ></button>
               )}
               <div className="rounded-lg relative">

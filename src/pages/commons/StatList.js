@@ -32,7 +32,7 @@ function StatsList(props) {
             >
               <div
                 className={`absolute bg-${
-                  index % 2 == 0 ? `teal-600` : `yellow-600`
+                  index % 2 === 0 ? `teal-600` : `yellow-600`
                 } h-4 w-4 rounded-full leading-loose text-left mt-3  ml-5`}
               ></div>
               <h3 className="absolute mt-1 p-1 ml-12 text-gray-800 font-sans font-light w-2/3 sm:w-2/3 md:w-2/5 lg:w-1/2 xl:w-2/3">

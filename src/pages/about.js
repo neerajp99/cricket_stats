@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 
 const SecondPage = props => {
+    console.log(props)
   return (
     <Layout location={props.location}>
       <div className="hidden absolute top-0 right-0 p-24 translate-r-full lg:block md:hidden">
