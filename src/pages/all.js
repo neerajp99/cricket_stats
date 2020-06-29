@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import Card from "./commons/Card"
-import {graphql } from "gatsby"
+import { graphql } from "gatsby"
 import escapeRegExp from "escape-string-regexp"
 
 function AllCards(props) {
@@ -10,14 +10,16 @@ function AllCards(props) {
   const [search, setSearch] = useState("")
   // console.log(props.location.state.country)
   let country = ""
-  if (props.location.state.country) {
-      country = props.location.state.country
+  console.log(props)
+  if (props.location.state !== null) {
+    country = props.location.state.country
   }
   // let country = props.location.state.country ? props.location.state.country : ""
 
   useEffect(() => {
+    console.log(country)
     setSearch(country)
-}, [country])
+  }, [country])
 
   // Filter out matches using country
   let showingMatches
