@@ -9,7 +9,11 @@ function AllCards(props) {
   const sachinData = allSachinJson.edges.map(e => e.node)
   const [search, setSearch] = useState("")
   // console.log(props.location.state.country)
-  let country = props.location.state.country ? props.location.state.country : ""
+  let country = ""
+  if (props.location.state.country) {
+      country = props.location.state.country
+  }
+  // let country = props.location.state.country ? props.location.state.country : ""
 
   useEffect(() => {
     setSearch(country)
