@@ -11,7 +11,7 @@ function AllCards(props) {
   let country = ""
   console.log(props)
   if (props.location.state !== null) {
-    if (props.location.state.country) {
+    if (props.location.state.country.length !== 0) {
       country = props.location.state.country
     }
   }
