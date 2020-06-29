@@ -21,6 +21,8 @@ const Header = props => {
             location.pathname === "/all" ||
             location.pathname === "/match"
               ? "Home"
+              : location.pathname === "/404"
+              ? null
               : "About"}
           </span>
         </Link>
@@ -33,7 +35,9 @@ const Header = props => {
               : `/about`
           }
         >
-          <span className=" cursor-pointer z-10 float-right w-16 bg-blue-300 h-2 mt-6 absolute right-0 mr-8 opacity-50" />
+          {location.pathname !== "/404" && (
+            <span className=" cursor-pointer z-10 float-right w-16 bg-blue-300 h-2 mt-6 absolute right-0 mr-8 opacity-50" />
+          )}
         </Link>
       </div>
     </header>
