@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Sachin Career Stats`,
+    description: `Web Application to show Sachin Tendulkar's career stats. Made for Atlan`,
+    author: `@neerajp99`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
