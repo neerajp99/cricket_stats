@@ -68,7 +68,7 @@ const IndexPage = props => {
   return (
     <Layout location={props.location}>
       <div className="max-h-screen max-w-full">
-        <div className="w-full h-64 mt-48 container mx-auto">
+        <div className="w-full h-64 mt-32 container mx-auto sm:mt-32 md:mt-56 lg:mt-56 xl:mt-56">
           <div className="w-5/6 mx-auto sm:w-2/3 md:w-2/3 lg:w-1/2 xl:w-1/2">
             <img src={sachin} className="h-20 mx-auto" alt="sachin" />
             <InputField
@@ -106,7 +106,7 @@ const IndexPage = props => {
                   })}
               </div>
 
-              <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row">
+              <div className="flex flex-col mb-32 sm:flex-col md:flex-row lg:flex-row xl:flex-row">
                 <Link
                   to="/all"
                   className="order-2 cursor-pointer text-center flex-col w-full flex-grow font-sans font-normal tracking-wide m-2 p-4 mt-6 text-blue-500 border-solid border-2 border-blue-500 rounded bg-transparent hover:bg-blue-500 hover:text-white transition duration-500 ease-in-out focus:outline-none sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:order-2 md:order-1 lg:order-1 xl:order-1 "

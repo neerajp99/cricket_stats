@@ -6,6 +6,22 @@ import escapeRegExp from "escape-string-regexp"
 import { navigate } from "gatsby"
 
 function AllCards(props) {
+  let overall_statistics = {
+    highest_score: 200,
+    max_win_opposition: "SL",
+    max_win_count_opposition: 43,
+    tosses_win: 239,
+    total_matches_win: 234,
+    total_averge: 39.79,
+  }
+  let overall_statistics_text = [
+      "Highest Score",
+      "Opposition Max Wins",
+      "Max Same Opposition Wins",
+      "Total Tosses Won",
+      "Total Matches Won",
+      "Overall Career Average"
+  ]
   let { allSachinJson } = props.data
   const sachinData = allSachinJson.edges.map(e => e.node)
   const [search, setSearch] = useState("")
@@ -58,7 +74,20 @@ function AllCards(props) {
             <span className="font-semibold text-gray-900">statistics</span> of
             his career.
           </h4>
-          <div className="bg-red-100 w-full h-64 mt-6"></div>
+          <div className="w-full h-auto mt-6 flex mb-4 md:h-auto lg:h-64 xl:h-64 flex-wrap">
+            {Object.keys(overall_statistics).map((key, index) => {
+              return (
+                <div class={`mt-2 w-1/2 bg-gray-${index % 2 == 0 ? `100` : `200`} h-40 text-center sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6 flex-row sm:flex-row xl:flex-row lg:flex-row md:flex-row md:h-40 lg:h-full xl:h-full`}>
+                  <h3 className={`text-2xl mt-10 font-sans text-blue-900 md:text-4xl lg:text-4xl xl:text-5xl md:mt-10 lg:mt-20 xl:mt-20`}>
+                    {overall_statistics[key]}
+                  </h3>
+                  <p className="font-sans font-normal text-gray-600 w-2/3 mx-auto text-center">
+                    {overall_statistics_text[index]}
+                  </p>
+                </div>
+              )
+            })}
+          </div>
           <div className="mt-6 w-full h-10">
             <h4 className="absolute font-mono font-medium text-gray-800 mt-2">
               All Matches &darr;
