@@ -26,10 +26,10 @@ gatsby build
 ### Website test on Google PageSpeed Insights
 
 Desktop
-![Alt text](/screenshots/desktop.png?raw=true "Screenshot")
+![Alt text](/screenshots/desktop.png "Screenshot")
 
-- Mobile
-![Alt text](/screenshots/mobile.png?raw=true "Screenshot")
+ Mobile
+![Alt text](/screenshots/mobile.png "Screenshot")
 
 * Details:
   * The Average website load time is 0.8s on Desktop and 1.4s on Mobile (checked on Google PageSpeed and UpTrends)
