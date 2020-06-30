@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
-import Card from "./commons/Card"
+import Card from "../components/commons/Card"
 import { graphql } from "gatsby"
 import escapeRegExp from "escape-string-regexp"
+import { navigate } from "gatsby"
 
 function AllCards(props) {
   let { allSachinJson } = props.data
   const sachinData = allSachinJson.edges.map(e => e.node)
   const [search, setSearch] = useState("")
   let country = ""
-  console.log(props)
-  if (props.location.state !== null) {
-    if (props.location.state.country.length !== 0) {
-      country = props.location.state.country
-    }
-  }
-  // let country = props.location.state.country ? props.location.state.country : ""
+  // Check if the object is null
+  const isNull = value => typeof value === "object" && !value
+  let loc = { country: "" }
 
   useEffect(() => {
-    if (country.length !== 0) {
+    if (props.location.state == null) {
+      navigate("/404/", { state: "Not Found" })
+      return null
+    } else {
+      if (!isNull(props.location.state)) {
+        loc = props.location.state
+        if (Object.keys(loc).length > 1) {
+          country = loc.country
+        }
+      }
       setSearch(country)
     }
   }, [country])
