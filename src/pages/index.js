@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "../styles/styles.css"
 import sachin from "../images/sachin.svg"
 import escapeRegExp from "escape-string-regexp"
-import InputField from "./commons/InputField"
+import InputField from "../components/commons/InputField"
 
 const IndexPage = props => {
   const [inputValue, setInputValue] = useState("")
