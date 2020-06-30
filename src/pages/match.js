@@ -40,10 +40,10 @@ function Match(props) {
             <div className="absolute bg-teal-200 text-teal-700 p-3 px-4 mt-4 ml-2 text-lg rounded-full font-sans font-semibold ">
               vs
             </div>
-            <div className="relative p-3 ml-16  text-4xl font-serif font-medium text-gray-800">
+            <div className="w-full relative p-3 ml-16  text-4xl font-serif font-medium text-gray-800">
               {headingState}
             </div>
-            <p className="ml-16 w-full relative font-sans font-normal text-gray-700 text-lg -mt-2 p-3 leading-relaxed sm:w-full md:w-2/3 lg:w-2/3 xl:w-2/3">
+            <p className="ml-16 w-full relative font-sans font-normal text-gray-700 text-md -mt-2 p-3 leading-relaxed sm:w-full md:text-lg sm:text-md lg:text-lg xl:text-lgmd:w-2/3 lg:w-2/3 xl:w-2/3">
               On {dataState.date},{" "}
               <span className="bg-blue-200 text-blue-700 font-medium p-2 rounded  ">
                 Sachin Tendulkar
