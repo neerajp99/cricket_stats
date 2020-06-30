@@ -109,14 +109,14 @@ const IndexPage = props => {
               <div className="flex flex-col mb-32 sm:flex-col md:flex-row lg:flex-row xl:flex-row">
                 <Link
                   to="/all"
-                  className="order-2 cursor-pointer text-center flex-col w-full flex-grow font-sans font-normal tracking-wide m-2 p-4 mt-6 text-blue-500 border-solid border-2 border-blue-500 rounded bg-transparent hover:bg-blue-500 hover:text-white transition duration-500 ease-in-out focus:outline-none sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:order-2 md:order-1 lg:order-1 xl:order-1 "
+                  className="order-2 cursor-pointer text-center flex-col w-full flex-grow font-sans font-normal tracking-wide m-2 p-3 mt-6 text-blue-500 border-solid border-2 border-blue-500 rounded bg-transparent hover:bg-blue-500 hover:text-white transition duration-500 ease-in-out focus:outline-none sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:order-2 md:order-1 lg:order-1 xl:order-1 sm:p-3 md:p-4 lg:p-4 xl:p-4 "
                 >
                   All Results
                 </Link>
                 <Link
                   to="/all"
                   state={{ country: inputValue }}
-                  className="order-1 cursor-pointer text-center flex-col w-full flex-grow bg-blue-500 font-sans font-normal tracking-wide m-2 p-4 mt-6 text-white border-solid border-2 border-blue-500 rounded hover:opacity-75 transition duration-500 ease-in-out focus:outline-none sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:order-1 md:order-2 lg:order-2 xl:order-2"
+                  className="order-1 cursor-pointer text-center flex-col w-full flex-grow bg-blue-500 font-sans font-normal tracking-wide m-2 p-3 mt-6 text-white border-solid border-2 border-blue-500 rounded hover:opacity-75 transition duration-500 ease-in-out focus:outline-none sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:order-1 md:order-2 lg:order-2 xl:order-2 sm:p-3 md:p-4 lg:p-4 xl:p-4"
                 >
                   Search
                 </Link>

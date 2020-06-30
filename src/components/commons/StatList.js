@@ -27,7 +27,7 @@ function StatsList(props) {
         {Object.keys(initialData).map((key, index) => {
           return (
             <li
-              className=" bg-gray-100 mt-4 h-20 p-3 sm:h-16 md:h-20 lg:h-16 xl:h-16 "
+              className=" bg-gray-100 mt-4 h-24 p-3 sm:h-24 md:h-20 lg:h-16 xl:h-16 "
               key={index}
             >
               <div
