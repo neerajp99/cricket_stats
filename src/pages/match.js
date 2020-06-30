@@ -54,7 +54,7 @@ function Match(props) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-4 mt-24 -mx-2 sm:flex-col md:flex-row lg:flex-row xl:flex-row sm:mt-32 md:mt-24 lg:mt-20 xl:mt-20">
+        <div className="flex flex-col mb-4 mt-32 -mx-2 sm:flex-col md:flex-row lg:flex-row xl:flex-row sm:mt-32 md:mt-24 lg:mt-20 xl:mt-20">
           <div className="w-full px-2 mt-6 sm:w-full md:w-4/6 lg:w-4/6 xl:w-4/6 ">
             <div className=" h-auto ">
               <StatsList data={dataState} />
