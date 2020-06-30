@@ -35,7 +35,7 @@ function StatsList(props) {
                   index % 2 === 0 ? `teal-600` : `yellow-600`
                 } h-4 w-4 rounded-full leading-loose text-left mt-3  ml-5`}
               ></div>
-              <h3 className="absolute mt-1 p-1 ml-12 text-gray-800 font-sans font-light w-2/3 sm:w-2/3 md:w-2/5 lg:w-1/2 xl:w-2/3">
+              <h3 className="absolute mt-1 p-1 ml-12 text-gray-800 font-sans font-light w-1/2 sm:w-1/2 md:w-2/5 lg:w-1/2 xl:w-2/3">
                 {questions[index]}
               </h3>
               <div className="p-1 float-right mt-1 text-gray-700 font-sans font-semibold">
