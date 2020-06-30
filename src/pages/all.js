@@ -74,7 +74,7 @@ function AllCards(props) {
             <span className="font-semibold text-gray-900">statistics</span> of
             his career.
           </h4>
-          <div className="w-full h-auto mt-6 flex mb-4 md:h-auto lg:h-64 xl:h-64 flex-wrap">
+          <div className="w-full h-auto mt-10 flex mb-4 md:h-auto lg:h-64 xl:h-64 flex-wrap">
             {Object.keys(overall_statistics).map((key, index) => {
               return (
                 <div class={`mt-2 w-1/2 bg-gray-${index % 2 == 0 ? `100` : `200`} h-40 text-center sm:w-1/2 md:w-1/2 lg:w-1/6 xl:w-1/6 flex-row sm:flex-row xl:flex-row lg:flex-row md:flex-row md:h-40 lg:h-full xl:h-full`}>
